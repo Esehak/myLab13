@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  componentCounterValue=105;
+
+  counterChanged(e){
+    this.componentCounterValue =e;
+    return false;
+  }
 }
